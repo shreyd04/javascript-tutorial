@@ -19,7 +19,14 @@ console.log(`hell0 ${name} my repocount is ${repc}`); // string interpolation
 // `` these are called as backticks
 console.log(name[0]);
 
-const newname = new String("jerry");
+const newname = new String("jerry-y");
 console.log(newname); // this is a string object, not a primitive string 
 // it means it is stored in heap memory and used as a reference
 console.log(newname.length); // accessing length property of string object
+ 
+console.log(newname.inderof('y'));
+
+// slicing newname string object and to store it in the variable
+// const newest will be used to store the sliced string
+const newest =  newname.substring(0,4) ;
+// here the last 4th element won't be printed
