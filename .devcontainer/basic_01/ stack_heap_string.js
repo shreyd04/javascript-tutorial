@@ -39,3 +39,16 @@ const url = "https://www.google%20.com";
 
 // now to make this searchable we need to encode the url
 console.log(url.replace("%20"," " ));
+console.log(url.includes("google")); // this checks if the string contains google
+console.log(url.split("/"));// this splits the stri g in array of the basis of /
+
+
+//ecommerece websites using this syntax
+
+const score = 100;
+const newScore = new Number(score); // this is a number object, not a primitive number
+console.log(newScore); // it is stored in heap memory and used as a reference
+
+const balance = 1000.3;
+console.log(balance.toFixed(2));// this will print the number with 2 decimal 
+console.log(balance.toPrecision(3)); // this will print the number with 3 significant digits
