@@ -52,3 +52,21 @@ console.log(newScore); // it is stored in heap memory and used as a reference
 const balance = 1000.3;
 console.log(balance.toFixed(2));// this will print the number with 2 decimal 
 console.log(balance.toPrecision(3)); // this will print the number with 3 significant digits
+
+const  a = 100000000000;
+console.log(a.toLocaleString('en-IN')); // this will print the number in Indian format
+
+//******************* Maths************
+//it's a built object in javascript
+console.log(Math); // this will print the Math 
+ console.log(Math.abs(-4));
+ console.log(Math.round(4.2));
+ console.log(Math.ceil(4.2));
+ console.log(Math.floor(4.2));
+ console.log(Math.random()); // this will print a random number between 0 and 1
+
+ // but if we want the random value to be above a certain min value there we will do the following:
+
+ const min = 10;
+ const max = 20;
+ console.log(Math.floor(Math.random() * (max - min +1) + min));// this will print a random number between min and max
