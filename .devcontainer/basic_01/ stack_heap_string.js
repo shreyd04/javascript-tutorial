@@ -24,9 +24,18 @@ console.log(newname); // this is a string object, not a primitive string
 // it means it is stored in heap memory and used as a reference
 console.log(newname.length); // accessing length property of string object
  
-console.log(newname.inderof('y'));
+console.log(newname.indexOf('y'));
 
 // slicing newname string object and to store it in the variable
 // const newest will be used to store the sliced string
-const newest =  newname.substring(0,4) ;
+const newest =  newname.substring(0,4);
 // here the last 4th element won't be printed
+const anotherString = newname.slice(-8,4);//this means it will start from the end to the 4th element
+console.log(newest);
+const newStringOne = "   jerry   ";
+console.log(newStringOne.trim());//this removes the garbage spacesin the string
+console.log(newStringOne.trimStart());
+const url = "https://www.google%20.com";
+
+// now to make this searchable we need to encode the url
+console.log(url.replace("%20"," " ));
