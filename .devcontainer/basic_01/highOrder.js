@@ -13,7 +13,9 @@ console.log(map);
  
 /*for(const [key , value] of map){
  //console.log(`${key} : ${value}`);
-} this doesn't run*/
+} this doesn't run i n for of and for in loop*/
+
+// arrays also have keys
 
 
 
