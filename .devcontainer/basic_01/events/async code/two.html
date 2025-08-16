@@ -11,13 +11,13 @@
     <button id = "start">Start</button>
 </body>
 <script>
-    setTimeout(function(){
+    /*setTimeout(function(){
         console.log("Jerry");
     },2000)
     const sayJerry = 
     function(){
         console.log("Jerry");
-    }
+    }*/
     /*setTimeout(sayJerry , 2000);
     const changeText = 
     function(){
@@ -30,12 +30,13 @@
         console.log("STOPPED");
         clearTimeout(changeMe)
     })*/
-    const sayDate = function(str){
-        console.log(str , Date.now());
-    }
+
     const startButton = setTimeout(sayDate , 1000 , "hi")
     document.querySelector('#start').addEventListener('click' , function(){
         console.log("STARTED");
+        const sayDate = function(str){
+        console.log(str , Date.now());
+    }
     })
     
     const intervalId = setTimeout(sayDate , 1000 , "hi")
