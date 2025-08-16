@@ -22,8 +22,16 @@
     document.getElementById('leetcode').addEventListener('click' , function(e){
         //alert("leetcode pic clicked");
         console.log(e);//this is an event 
-    } , false)//what is this false
+        console.log("clicked leetcode");
+    } , false)//what is this false it's an event propagation
     //attachevent was also used in internet explorer for the same purpose
     //jQuery - on
+    // what to study : type , timestamp , defaultPrevented target , true element , source element , currentTargets , client X clientY , crtlket , altkey , screenX , screenY
+    
+    //event propagation true of false
+    document.getElementById('phtoshop').addEventListener('click' , function(e){
+        console.log("clicked the photoshop");
+    }, false)//if we write here true it will be event cspturing which willl start from the top and the false will
+    //start from the bottom
 </script>
 </html>
