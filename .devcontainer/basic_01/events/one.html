@@ -13,4 +13,17 @@
      <li><img wodth = "200px" id ="leetcode" src = "https://assets.leetcode.com/uploads/2020/10/21/bi1.jpg "></li>
  </div>
 </body>
+<script>
+    //there are many events list like moise pointer moving clicking keyboard button using etc
+    document.getElementById('leetcode').onclick = function(){
+        alert("leetcode picture appeared")//but this approach gives less information that is no propagation ability therefore less features
+    }
+    //newapproach
+    document.getElementById('leetcode').addEventListener('click' , function(e){
+        //alert("leetcode pic clicked");
+        console.log(e);//this is an event 
+    } , false)//what is this false
+    //attachevent was also used in internet explorer for the same purpose
+    //jQuery - on
+</script>
 </html>
