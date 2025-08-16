@@ -15,13 +15,13 @@
 </body>
 <script>
     //there are many events list like moise pointer moving clicking keyboard button using etc
-    document.getElementById('leetcode').onclick = function(){
+   /* document.getElementById('leetcode').onclick = function(){
         alert("leetcode picture appeared")//but this approach gives less information that is no propagation ability therefore less features
-    }
+    }*/
     //newapproach
     document.getElementById('leetcode').addEventListener('click' , function(e){
         //alert("leetcode pic clicked");
-        console.log(e);//this is an event 
+        //console.log(e);//this is an event 
         console.log("clicked leetcode");
     } , false)//what is this false it's an event propagation
     //attachevent was also used in internet explorer for the same purpose
