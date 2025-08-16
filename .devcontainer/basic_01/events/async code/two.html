@@ -18,21 +18,32 @@
     function(){
         console.log("Jerry");
     }
-    setTimeout(sayJerry , 2000);
+    /*setTimeout(sayJerry , 2000);
     const changeText = 
     function(){
         document.querySlector('h1').innerHTML = "best JS series"
     }
     setTimeout(changeText , 2000);
+
     const changeMe = setTimeout(changeText , 2000)
     document.querySelector('#stop').addEventListener('click ' , function(){
+        console.log("STOPPED");
         clearTimeout(changeMe)
-        console.log("STOPPED")
-    })
+    })*/
     const sayDate = function(str){
         console.log(str , Date.now());
     }
-    const intervalId = setTimeout(sayDate , 1000 , "hi");
-    clearInterval(intervalId);
+    setTimeout(sayDate , 1000 , "hi");
+
+    const startButton = setTimeout(sayDate , 1000 , "hi")
+    document.querySelector('#start').addEventListener('click' , function(){
+        console.log("STARTED");
+    })
+    
+    const intervalId = setTimeout(sayDate , 1000 , "hi")
+    document.querySelector('#stop').addEventListener('click' , function(){
+        console.log("STOPPED");
+         clearInterval(intervalId);
+    })
 </script>
 </html>
