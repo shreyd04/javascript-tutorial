@@ -20,8 +20,9 @@
     setTimeout(sayJerry , 2000);
     const changeText = 
     function(){
-        document.querySlector('h1').innerHTML = "best JS series";
+        document.querySlector('h1').innerHTML = "best JS series"
     }
+    setTimeout(changeText , 2000);
     const changeMe = setTimeout(changeText , 2000)
     document.querySelector('#stop').addEventListener('click ' , function(){
         clearTimeout(changeMe)
