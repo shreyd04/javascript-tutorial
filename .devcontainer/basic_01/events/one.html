@@ -32,7 +32,7 @@
     document.getElementById('photoshop').addEventListener('click' , function(e){
         console.log("clicked the photoshop");
     }, false);//if we write here true it will be event cspturing which willl start from the top and the false will
-    //start from the bottom
+    //start from the bottom here it's not working since we didn'r make parent child nested nodes
 
     // example of clicking the image and it disappear
     document.querySelector('leetcode').addEventListener('click' , function(e){
@@ -40,6 +40,6 @@
         let removeIt = e.target.parentNode;
         removeIt.remove();
     })
-
+    
 </script>
 </html>
