@@ -33,7 +33,9 @@
     let intervalId;
     document.querySelector('#start').addEventListener('click' , function(){
         console.log("STARTED");
+        if(!intervalId){
         intervalId = setInterval(sayDate , 1000 , "hi")
+        }
     })
     const sayDate = function(str){
         console.log(str , Date.now());
@@ -42,6 +44,7 @@
     document.querySelector('#stop').addEventListener('click' , function(){
          clearInterval(intervalId);
          console.log("STOPPED");
+         intervalId = null;
     })
 </script>
 </html>
