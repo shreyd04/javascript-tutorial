@@ -30,14 +30,14 @@
         console.log("STOPPED");
         clearTimeout(changeMe)
     })*/
-    
-    document.querySelector('#start').addEventListener('click' , function(){
-        console.log("STARTED");
-        setInterval(sayDate , 1000 , "hi");
-    })
     const sayDate = function(str){
         console.log(str , Date.now());
     }
+    document.querySelector('#start').addEventListener('click' , function(){
+        setInterval(sayDate , 1000 , "hi")
+        console.log("STARTED");
+    })
+    
     const intervalId = setInterval(sayDate , 1000 , "hi")
 
     document.querySelector('#stop').addEventListener('click' , function(){
