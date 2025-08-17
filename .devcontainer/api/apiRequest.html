@@ -12,8 +12,13 @@
     const requestURl = 'https://api.github.com/users/';
     //it's a class so we habve to make it's object first
     const xhr = new XMLHttpRequest();
-    xhr.open('GET' , requestURl);
-    console.log(xhr.readyState);
+    xhr.open('GET' , requestURl); //but it doesn't continuously track the state
+    xhr.onreadtstatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            console.log(this.responseText);
+        }
+    }
     xhr.send();
 </script>
 </html>
